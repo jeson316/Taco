@@ -1,4 +1,4 @@
-package com.taco.demo
+package com.taco.demo.model
 
 /**
  * 配置列表类型

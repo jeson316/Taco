@@ -1,0 +1,13 @@
+package com.taco.demo.model
+
+import javax.validation.constraints.NotNull
+import javax.validation.constraints.Size
+
+/**
+ * order 类的定义
+ * 使用校验 注解时候有问题，暂时不支持
+ */
+data class Order constructor(@NotNull @Size(min=5,message = "Name 必须最少5个字符") var name: String = "",
+                             var street: String = "", var city: String = "",
+                             var state: String = "", var zip: String = "", var ccNumber: String = "",
+                             var ccExpiration: String = "", var ccCVV: String = "")
